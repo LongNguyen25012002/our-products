@@ -1,0 +1,37 @@
+.dots-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    background-color: #323a46;
+ }
+ 
+ .dots-loading > .dot {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: #ccc;
+    margin: 0 1rem;
+    animation: dotLoading 1s forwards infinite linear;
+ }
+ 
+ .dots-loading > .dot:nth-child(2) {
+    animation-delay: 0.1s;
+ }
+ 
+ .dots-loading > .dot:nth-child(3) {
+    animation-delay: 0.2s;
+ }
+ 
+ .dots-loading > .dot:nth-child(4) {
+    animation-delay: 0.3s;
+ }
+ 
+ @keyframes dotLoading {
+    to {
+       opacity: 0;
+    }
+ }
+     
